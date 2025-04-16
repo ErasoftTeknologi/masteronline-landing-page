@@ -52,7 +52,9 @@ The "masteronline-landing-page" project is a web application designed to serve a
 
 ### **Cara Publish Jika Ada Perubahan di Landing Page**
 
-1. **Install Node.js (Jika Belum Ada)**
+1. **Install Requirements**
+   - Visual Studio Code
+   - ESLint extension for VSCode (URL: [https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))
    - Download dan install Node.js: [Download Node.js](https://nodejs.org/en/download/current).
 
 2. **Pull Repository**
@@ -72,7 +74,7 @@ The "masteronline-landing-page" project is a web application designed to serve a
      ```bash
      npm run build:dev
      ```
-     atau
+     atau untuk production
      ```bash
      npm run build:prod
      ```
