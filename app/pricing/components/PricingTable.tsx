@@ -56,7 +56,7 @@ function PackageHeader({ pkg }: PackageHeaderProps) {
     if (!price) {
       return (
         <div className="inline-flex items-center gap-1 font-normal">
-          <div className="font-bold text-2xl tracking-tighter">Gratis</div>
+          <div className="font-bold text-2xl tracking-tighter">{pkg.formattedMonthlyPriceList}</div>
         </div>
       )
     }

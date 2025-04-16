@@ -9,17 +9,61 @@ export const PACKAGES = [
     desc: "Untuk free trial selama 2 minggu",
     monthlyPrice: 0,
     annualPriceDisc: null,
-    formattedMonthlyPrice: (
-      <div className="inline-flex items-center gap-1 font-normal">
-        <div className="font-bold text-2xl tracking-tighter">Gratis</div>
-      </div>
-    ),
+    formattedMonthlyPrice:
+      (
+        <div className="inline-flex items-center gap-1 font-normal">
+          <div className="font-bold text-2xl tracking-tighter">Gratis</div>
+        </div>
+      ),
+    formattedMonthlyPriceList:
+      (
+        <div className="inline-flex items-center gap-1 font-normal">
+          <div className="font-bold text-2xl tracking-tighter">Gratis</div>
+        </div>
+      ),
     popular: false,
     includes: [
       "14 hari free trial",
       "Max 4 toko",
       "Max 2 marketplace",
       "Private onboarding",
+    ],
+    className: "border-black",
+    icon: <LayersSharp className="text-black text-2xl" />,
+    priceWrapperClassName: "border-black",
+  },
+  {
+    id: "starter",
+    title: "Starter",
+    subtitle: "Untuk toko skala mikro",
+    desc: "Untuk toko skala mikro",
+    monthlyPrice: 0,
+    annualPriceDisc: null,
+    formattedMonthlyPrice:
+      (
+        <div className="inline-flex items-center gap-1 font-normal">
+          <div className="text-base md:text-xl lg:text-2xl font-bold"><span>Rp 200.000</span>
+            <br></br><span className='inline-block opacity-75'>/ 6 bulan</span></div>
+        </div>
+      ),
+    formattedMonthlyPriceList:
+      (
+        <div className="inline-flex items-center gap-1 font-normal">
+          <div className="text-sm">Rp</div>
+          <div className="font-bold text-2xl tracking-tighter">200</div>
+          <div className="text-xs text-left">
+            <div>rb</div>
+            <div>/6 bln</div>
+          </div>
+        </div>
+      ),
+    popular: false,
+    includes: [
+      "1k pesanan/6 bulan",
+      "Unlimited toko",
+      "Unlimited marketplace",
+      "Max 2 user",
+      "Chat marketplace",
     ],
     className: "border-black",
     icon: <LayersSharp className="text-black text-2xl" />,
@@ -311,6 +355,56 @@ export const PRICE_DETAILS = {
     openapi: false,
     tada: false,
     ftp: false,
+  },
+  starter: {
+    numMarketplaces: "Unlimited",
+    numMonthlyOrders: "1.000 (per 6 bulan)",
+    marketplaceIntegration: true,
+    invoicingAndSalesAnalysis: true,
+    shipmentManagement: true,
+    purchasing: true,
+    multiwarehouse: true,
+    accountReceivable: true,
+    accountPayable: true,
+    generalLedger: true,
+    multiuser: 2,
+    chatIntegration: "Free",
+    tiktokshop: "Free",
+    multisku: (
+      <AddonCheckboxInput id="silver" featureId="multisku" price={200000}>
+        Rp 200.000/bulan
+      </AddonCheckboxInput>
+    ),
+    bundling: (
+      <AddonCheckboxInput id="silver" featureId="bundling" price={300000}>
+        Rp 300.000/bulan
+      </AddonCheckboxInput>
+    ),
+    eightytwocart: "Free",
+    shopify: "Free",
+    woocommerce: "Free",
+    dealpos: (
+      <AddonCheckboxInput id="silver" featureId="dealpos" price={200000}>
+        Rp 200.000/bulan
+      </AddonCheckboxInput>
+    ),
+    erasoft: "Free",
+    accurate: (
+      <AddonCheckboxInput id="silver" featureId="accurate" price={200000}>
+        Rp 200.000/bulan
+      </AddonCheckboxInput>
+    ),
+    openapi: (
+      <AddonCheckboxInput id="silver" featureId="openapi" price={200000}>
+        Rp 200.000/bulan
+      </AddonCheckboxInput>
+    ),
+    tada: "Free",
+    ftp: (
+      <AddonCheckboxInput id="silver" featureId="feature" price={300000}>
+        Rp 300.000/bulan
+      </AddonCheckboxInput>
+    ),
   },
   silver: {
     numMarketplaces: "Unlimited",
